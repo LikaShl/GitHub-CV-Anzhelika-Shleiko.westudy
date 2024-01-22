@@ -1,0 +1,121 @@
+:root {
+  --main-color: #3176df;
+  --secondary-color: #938989;
+  --background-color: #eee5e5;
+}
+body {
+  font-family: "JetBrains Mono", monospace;
+  font-family: "Roboto Condensed", sans-serif;
+  width: 70%;
+  margin: 10px auto;
+}
+header {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, white 60%, var(--main-color) 40%);
+  padding: 20px;
+}
+.button {
+  display: block;
+  margin: 60px auto 20px auto;
+  padding: 10px 20px 10px 20px;
+  width: 250px;
+  border: solid 1px #3176df;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px #938989;
+  background-color: var(--background-color);
+  color: var(--main-color);
+  transition: all 200ms ease;
+  font-size: 24px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: var(--secondary-color);
+  cursor: pointer;
+}
+
+hr {
+  border: solid 1px var(--main-color);
+}
+h3 {
+  display: inline;
+}
+i {
+  padding: 5px;
+  font-size: 24px;
+  color: var(--main-color);
+}
+ul {
+  list-style-type: none;
+}
+p {
+  color: var(--secondary-color);
+}
+.name-occupation {
+  padding-left: 40px;
+}
+.business-card {
+  display: block;
+  margin: 80px auto;
+  width: 400px;
+  border: solid 1px var(--main-color);
+  border-radius: 10px;
+  padding: 20px;
+  background-color: var(--background-color);
+}
+.adress {
+  display: inline flex;
+}
+.back {
+  display: flex;
+  justify-content: center;
+}
+.project {
+  margin-bottom: 30px;
+}
+
+.description {
+  border: solid 1px var(--main-color);
+  text-align: center;
+  padding: 40px 30px;
+  background-color: var(--background-color);
+  border-radius: 10px;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a.hover {
+  color: var(--main-color);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+a.back {
+  font-size: 24px;
+  color: var(--main-color);
+}
+
+@media (max-width: 600px) {
+  body {
+    width: 95%;
+  }
+  .button {
+    margin: 50px auto 50px auto;
+    width: 200px;
+  }
+  .name-occupation {
+    padding-left: 0;
+  }
+  h1,
+  h2 {
+    text-align: center;
+  }
+  .col-sm-4 {
+    display: flex;
+    justify-content: center;
+  }
+}
