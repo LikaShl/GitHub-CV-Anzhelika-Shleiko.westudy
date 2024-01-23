@@ -1,8 +1,4 @@
-:root {
-  --main-color: #3176df;
-  --secondary-color: #938989;
-  --background-color: #eee5e5;
-}
+
 body {
   font-family: "JetBrains Mono", monospace;
   font-family: "Roboto Condensed", sans-serif;
@@ -10,48 +6,41 @@ body {
   margin: 10px auto;
 }
 header {
-  width: 100%;
+  width: 80%;
   height: 100%;
-  background: linear-gradient(to top, white 60%, var(--main-color) 40%);
+  background-color: linear-gradient(to top, white 60%,  #3176df 40%);
+  background-image: url("AShleiko_photo.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
   padding: 20px;
+
 }
-.button {
-  display: block;
-  margin: 60px auto 20px auto;
-  padding: 10px 20px 10px 20px;
-  width: 250px;
+hr {s
   border: solid 1px #3176df;
-  border-radius: 10px;
-  box-shadow: 10px 5px 5px #938989;
-  background-color: var(--background-color);
-  color: var(--main-color);
-  transition: all 200ms ease;
-  font-size: 24px;
-  text-align: center;
-  text-decoration: none;
-}
-
-.button:hover {
-  background-color: var(--secondary-color);
-  cursor: pointer;
-}
-
-hr {
-  border: solid 1px var(--main-color);
 }
 h3 {
   display: inline;
 }
+h4,
+h5 {
+  color: #938989;
+}
 i {
   padding: 5px;
   font-size: 24px;
-  color: var(--main-color);
+  color: #3176df;
 }
-ul {
+ul,
+dl {
   list-style-type: none;
+  color: #938989;
 }
 p {
-  color: var(--secondary-color);
+  color: #938989;
+}
+.languages li {
+  display: inline-block;
 }
 .name-occupation {
   padding-left: 40px;
@@ -60,10 +49,10 @@ p {
   display: block;
   margin: 80px auto;
   width: 400px;
-  border: solid 1px var(--main-color);
+  border: solid 1px #3176df;
   border-radius: 10px;
   padding: 20px;
-  background-color: var(--background-color);
+  background-color:  #eee5e5;
 }
 .adress {
   display: inline flex;
@@ -77,10 +66,10 @@ p {
 }
 
 .description {
-  border: solid 1px var(--main-color);
+  border: solid 1px #3176df;
   text-align: center;
   padding: 40px 30px;
-  background-color: var(--background-color);
+  background-color:  #eee5e5;
   border-radius: 10px;
 }
 a {
@@ -89,33 +78,12 @@ a {
 }
 
 a.hover {
-  color: var(--main-color);
+  color: #3176df ;
   font-weight: bold;
   text-decoration: underline;
 }
 
 a.back {
   font-size: 24px;
-  color: var(--main-color);
-}
-
-@media (max-width: 600px) {
-  body {
-    width: 95%;
-  }
-  .button {
-    margin: 50px auto 50px auto;
-    width: 200px;
-  }
-  .name-occupation {
-    padding-left: 0;
-  }
-  h1,
-  h2 {
-    text-align: center;
-  }
-  .col-sm-4 {
-    display: flex;
-    justify-content: center;
-  }
+  color: #3176df;
 }
