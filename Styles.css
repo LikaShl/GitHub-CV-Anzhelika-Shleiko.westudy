@@ -1,4 +1,3 @@
-
 body {
   font-family: "JetBrains Mono", monospace;
   font-family: "Roboto Condensed", sans-serif;
@@ -6,17 +5,13 @@ body {
   margin: 10px auto;
 }
 header {
-  width: 80%;
+  width: 100%;
   height: 100%;
-  background-color: linear-gradient(to top, white 60%,  #3176df 40%);
-  background-image: url("AShleiko_photo.jpg");
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: contain;
   padding: 20px;
-
+  background: 90% / contain no-repeat url("AShleiko_photo.jpg"),
+    linear-gradient(to top, white 60%, #3176df 40%);
 }
-hr {s
+hr {
   border: solid 1px #3176df;
 }
 h3 {
@@ -25,6 +20,7 @@ h3 {
 h4,
 h5 {
   color: #938989;
+  font-size: 20px;
 }
 i {
   padding: 5px;
@@ -35,55 +31,15 @@ ul,
 dl {
   list-style-type: none;
   color: #938989;
+  padding-left: 20px;
 }
 p {
   color: #938989;
 }
-.languages li {
-  display: inline-block;
-}
-.name-occupation {
-  padding-left: 40px;
-}
-.business-card {
-  display: block;
-  margin: 80px auto;
-  width: 400px;
-  border: solid 1px #3176df;
-  border-radius: 10px;
-  padding: 20px;
-  background-color:  #eee5e5;
-}
-.adress {
-  display: inline flex;
-}
-.back {
-  display: flex;
-  justify-content: center;
-}
-.project {
-  margin-bottom: 30px;
-}
-
-.description {
-  border: solid 1px #3176df;
-  text-align: center;
-  padding: 40px 30px;
-  background-color:  #eee5e5;
-  border-radius: 10px;
-}
 a {
-  color: black;
-  text-decoration: none;
+  padding: 10px;
 }
-
-a.hover {
-  color: #3176df ;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-a.back {
-  font-size: 24px;
-  color: #3176df;
+.languages li,
+.contacts li {
+  display: inline-block;
 }
